@@ -1,0 +1,15 @@
+
+# Compiled Java files
+*.class
+out/
+
+# Temporary backups
+cleanup_backup/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
