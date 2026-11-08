@@ -133,6 +133,17 @@ blockescape/
 ├── .gitignore
 └── README.md
 ```
+## Team Contributions
+
+### Person 6 – Level Design, Integration & Testing
+
+- **Level 5 Development:** Designed and added the fifth playable level with challenging holes, obstacles and orientation-based movement, increasing the game's difficulty without introducing new mechanics.
+- **Level Solvability Verification:** Tested all five levels using the BFS-based `LevelCheck` program to verify that each level has a valid solution.
+- **Controller Validation:** Verified that the BFS-generated solutions could be successfully replayed through the game controller.
+- **Gameplay Testing:** Performed end-to-end testing of movement, block orientations, switches, bridge activation, undo, restart, winning and falling mechanics.
+- **Level Progression Testing:** Verified level unlocking and progression from Level 1 through Level 5.
+- **Code Cleanup & Integration:** Removed obsolete files and temporary debug code, addressed unused code warnings, and verified successful compilation and execution.
+- **Documentation & GitHub:** Prepared and updated the README, organized project screenshots, configured Git, and published the project repository on GitHub.
 
 ##  Future Improvements
 
