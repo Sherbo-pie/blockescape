@@ -135,15 +135,17 @@ blockescape/
 ```
 ## Team Contributions
 
-### Person 5 - SkyBunny
+### Person 1 - 
 
-- **Development of first 4 levels:** Designed and implemented four original playable level layouts, progressively introducing obstacles, holes, switches and missing tiles.
-- **Level Management:** Developed `LevelManager.java` to store and load all four level layouts, manage the current level, handle level progression and support level restarts.
-- **Starting Positions & Goals:** Set up the starting position (`P`) and goal (`G`) for each level.
-- **Switch & Appearing Tile Mechanics:** Implemented switch-to-tile mappings for Levels 3 and 4, allowing switches to activate designated missing tiles.
-- **Persistent Tile Activation:** Ensured that activated appearing tiles become normal tiles and remain available for the rest of the level.
-- **Move Counter Development:** Created `MoveCounter.java` to track the number of moves, retrieve the current count and reset it when required.
-- **Testing & Verification:** Tested all four level layouts, starting positions, switch mappings, tile activation, level restarting and level progression.
+ Board and Tile System
+
+- **Board Creation:** Implemented the `Board` class using a two-dimensional `Tile` array to represent the game grid.
+- **Tile Management:** Added functionality to initialize, access, update, and display tiles on the board.
+- **Tile Classes:** Developed different tile types, including `NormalTile`, `HoleTile`, `GoalTile`, `SwitchTile`, and `VoidTile`.
+- **Tile Properties:** Implemented tile-specific symbols and behaviours, including safety, goal, switch, and void identification.
+- **Object-Oriented Design:** Applied abstraction, encapsulation, inheritance, and polymorphism through the abstract `Tile` class and its subclasses.
+- **Boundary Handling:** Added board boundary checks and validation to prevent invalid tile access and null tile assignments.
+- **Integration Support:** Structured the board and tile components for use by the other game systems.
 
 ### Person 6 – Level Design, Integration & Testing
 
