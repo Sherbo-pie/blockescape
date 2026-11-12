@@ -135,6 +135,19 @@ blockescape/
 ```
 ## Team Contributions
 
+### Person 5 – (Sruchitha12) GUI Development and User Interface
+
+- Developed the graphical user interface using **Java Swing**.
+- Created and connected the Home, Level Selection, and Gameplay screens using `CardLayout`.
+- Implemented screen navigation using `GameWindow.java` and the `ScreenNavigator` interface.
+- Developed `HomeScreen.java`, `LevelSelectScreen.java`, and `GamePanel.java`.
+- Implemented keyboard controls using Swing Key Bindings (`InputMap` and `ActionMap`) through `InputHandler.java`.
+- Integrated keyboard inputs with the `GameController` to communicate player actions to the game logic.
+- Developed the isometric board rendering using `IsoRenderer.java` and `Graphics2D`.
+- Created reusable backgrounds, custom buttons, and game overlays using `BackgroundPanel.java`, `Theme.java`, `StyledButton.java`, and `OverlayPanel.java`.
+- Applied Java concepts such as **Inheritance, Encapsulation, Abstraction, Interfaces, and Event Handling** in the GUI implementation.
+- Worked on the overall screen design, user interaction, and navigation experience.
+
 ### Person 5 - SkyBunny
 
 - **Development of first 4 levels:** Designed and implemented four original playable level layouts, progressively introducing obstacles, holes, switches and missing tiles.
