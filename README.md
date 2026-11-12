@@ -168,6 +168,18 @@ blockescape/
 - **Code Cleanup & Integration:** Removed obsolete files and temporary debug code, addressed unused code warnings, and verified successful compilation and execution.
 - **Documentation & GitHub:** Prepared and updated the README, organized project screenshots, configured Git, and published the project repository on GitHub.
 
+
+### Person 2 - Block Movement & Game Rules
+
+- **Block State Management:** Created `Block.java` to track the block’s row, column and orientation using private fields.
+- **Four-Direction Movement:** Implemented rolling up, down, left and right from all three orientations: upright, horizontal and vertical.
+- **Occupied Cell Calculation:** Added logic to identify the board cells covered by the block. An upright block occupies one cell, while a block lying down occupies two adjacent cells.
+- **Immutable Block Positions:** Made each roll return a new `Block` instance so the previous position can be retained for undo.
+- **Boundary & Fall Detection:** Developed `GameRules.java` to check every occupied cell and detect a fall when any part of the block lands outside the board, on a hole or on a void tile.
+- **Goal Detection:** Implemented the win condition so the player wins only when the block lands upright on the goal tile.
+- **Move Results:** Returned the block’s resulting position and a status of `PLAYING`, `FALLEN` or `WON` so the game controller can respond to each move.
+  
+
 ##  Future Improvements
 
 - Persistent player progress and saved best scores.
