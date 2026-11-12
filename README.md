@@ -1,4 +1,4 @@
-# Block Escape – A Java Puzzle Game
+# Block & Roll – A Java Puzzle Game
 
 A Java-based 3D-inspired puzzle game built using Java Swing. Navigate a rectangular block through challenging levels, avoid holes, activate switches, and reach the goal!
 
