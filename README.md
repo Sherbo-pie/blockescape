@@ -135,7 +135,27 @@ blockescape/
 ```
 ## Team Contributions
 
-### Person 5 – (Sruchitha12) GUI Development and User Interface
+### Person 1 - (GnapikaChebrolu) Board and Tile System
+
+- **Board Creation:** Implemented the `Board` class using a two-dimensional `Tile` array to represent the game grid.
+- **Tile Management:** Added functionality to initialize, access, update, and display tiles on the board.
+- **Tile Classes:** Developed different tile types, including `NormalTile`, `HoleTile`, `GoalTile`, `SwitchTile`, and `VoidTile`.
+- **Tile Properties:** Implemented tile-specific symbols and behaviours, including safety, goal, switch, and void identification.
+- **Object-Oriented Design:** Applied abstraction, encapsulation, inheritance, and polymorphism through the abstract `Tile` class and its subclasses.
+- **Boundary Handling:** Added board boundary checks and validation to prevent invalid tile access and null tile assignments.
+- **Integration Support:** Structured the board and tile components for use by the other game systems.
+
+### Person 2 - (Vasavi-16) Block Movement & Game Rules
+
+- **Block State Management:** Created `Block.java` to track the block’s row, column and orientation using private fields.
+- **Four-Direction Movement:** Implemented rolling up, down, left and right from all three orientations: upright, horizontal and vertical.
+- **Occupied Cell Calculation:** Added logic to identify the board cells covered by the block. An upright block occupies one cell, while a block lying down occupies two adjacent cells.
+- **Immutable Block Positions:** Made each roll return a new `Block` instance so the previous position can be retained for undo.
+- **Boundary & Fall Detection:** Developed `GameRules.java` to check every occupied cell and detect a fall when any part of the block lands outside the board, on a hole or on a void tile.
+- **Goal Detection:** Implemented the win condition so the player wins only when the block lands upright on the goal tile.
+- **Move Results:** Returned the block’s resulting position and a status of `PLAYING`, `FALLEN` or `WON` so the game controller can respond to each move.
+
+### Person 3 – (Sruchitha12) GUI Development and User Interface
 
 - Developed the graphical user interface using **Java Swing**.
 - Created and connected the Home, Level Selection, and Gameplay screens using `CardLayout`.
@@ -148,7 +168,7 @@ blockescape/
 - Applied Java concepts such as **Inheritance, Encapsulation, Abstraction, Interfaces, and Event Handling** in the GUI implementation.
 - Worked on the overall screen design, user interaction, and navigation experience.
 
-### Person 5 - SkyBunny
+### Person 4 - (SkyBunny) Development of First 4 Levels
 
 - **Development of first 4 levels:** Designed and implemented four original playable level layouts, progressively introducing obstacles, holes, switches and missing tiles.
 - **Level Management:** Developed `LevelManager.java` to store and load all four level layouts, manage the current level, handle level progression and support level restarts.
@@ -158,7 +178,9 @@ blockescape/
 - **Move Counter Development:** Created `MoveCounter.java` to track the number of moves, retrieve the current count and reset it when required.
 - **Testing & Verification:** Tested all four level layouts, starting positions, switch mappings, tile activation, level restarting and level progression.
 
-### Person 6 – Level Design, Integration & Testing
+### Person 5 - () 
+
+### Person 6 – (Sherbo-pie) Level Design, Integration & Testing
 
 - **Level 5 Development:** Designed and added the fifth playable level with challenging holes, obstacles and orientation-based movement, increasing the game's difficulty without introducing new mechanics.
 - **Level Solvability Verification:** Tested all five levels using the BFS-based `LevelCheck` program to verify that each level has a valid solution.
@@ -166,19 +188,7 @@ blockescape/
 - **Gameplay Testing:** Performed end-to-end testing of movement, block orientations, switches, bridge activation, undo, restart, winning and falling mechanics.
 - **Level Progression Testing:** Verified level unlocking and progression from Level 1 through Level 5.
 - **Code Cleanup & Integration:** Removed obsolete files and temporary debug code, addressed unused code warnings, and verified successful compilation and execution.
-- **Documentation & GitHub:** Prepared and updated the README, organized project screenshots, configured Git, and published the project repository on GitHub.
-
-
-### Person 2 - Block Movement & Game Rules
-
-- **Block State Management:** Created `Block.java` to track the block’s row, column and orientation using private fields.
-- **Four-Direction Movement:** Implemented rolling up, down, left and right from all three orientations: upright, horizontal and vertical.
-- **Occupied Cell Calculation:** Added logic to identify the board cells covered by the block. An upright block occupies one cell, while a block lying down occupies two adjacent cells.
-- **Immutable Block Positions:** Made each roll return a new `Block` instance so the previous position can be retained for undo.
-- **Boundary & Fall Detection:** Developed `GameRules.java` to check every occupied cell and detect a fall when any part of the block lands outside the board, on a hole or on a void tile.
-- **Goal Detection:** Implemented the win condition so the player wins only when the block lands upright on the goal tile.
-- **Move Results:** Returned the block’s resulting position and a status of `PLAYING`, `FALLEN` or `WON` so the game controller can respond to each move.
-  
+- **Documentation & GitHub:** Prepared and updated the README, organized project screenshots, configured Git, and published the project repository on GitHub.  
 
 ##  Future Improvements
 
