@@ -175,10 +175,17 @@ blockescape/
 - **Starting Positions & Goals:** Set up the starting position (`P`) and goal (`G`) for each level.
 - **Switch & Appearing Tile Mechanics:** Implemented switch-to-tile mappings for Levels 3 and 4, allowing switches to activate designated missing tiles.
 - **Persistent Tile Activation:** Ensured that activated appearing tiles become normal tiles and remain available for the rest of the level.
-- **Move Counter Development:** Created `MoveCounter.java` to track the number of moves, retrieve the current count and reset it when required.
 - **Testing & Verification:** Tested all four level layouts, starting positions, switch mappings, tile activation, level restarting and level progression.
 
-### Person 5 - () 
+ 
+### Person 5 – (Shoa-Ahmed) Move Counting & History
+
+- **Move Counter:** Created `MoveCounter.java` to track the number of moves made, with `recordMove()` to add 1, `getMoves()` for the GUI to display, and `reset()` to set the count back to 0.
+- **Counting Rule:** Developed the counting so that only moves that keep the block on the board are counted, and the counter resets whenever a level starts, restarts or the next level loads.
+- **Move History:** Developed `MoveHistory.java` to store earlier game states for undo, with `save()`, `undo()`, `canUndo()`, `clear()` and `size()`. It uses an `ArrayDeque` as a stack (LIFO), so the most recent move is always undone first.
+- **Snapshots:** Created the snapshot approach, where a copy of the game state just before each move is pushed onto the history stack. Each snapshot stores the block position and orientation, the move count, and the switches already activated. It is saved in memory only.
+- **Undo Functionality:** Developed undo so it pops the latest snapshot, restores the block, sets the move counter back to the saved value, and re-applies the saved switches so appeared tiles are restored correctly.
+- **History Clearing:** Implemented clearing of the history on level start, restart and next level, so undo never goes back into a previous attempt or level.
 
 ### Person 6 – (Sherbo-pie) Level Design, Integration & Testing
 
